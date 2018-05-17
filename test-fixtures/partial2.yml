@@ -1,0 +1,10 @@
+---
+Type: AWS::S3::Bucket
+Properties:
+  BucketName:
+    LocalRef: bucketName
+  AccessControl:
+    LocalRef: accessControl
+  WebsiteConfiguration:
+    IndexDocument: index.html
+    ErrorDocument: error.html

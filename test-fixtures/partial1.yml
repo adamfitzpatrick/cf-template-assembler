@@ -1,0 +1,8 @@
+---
+Parameter1:
+  Type: String
+  Description: Important parameter
+Parameter2:
+  Type: String
+  Description: Less important parameter
+  Default: value

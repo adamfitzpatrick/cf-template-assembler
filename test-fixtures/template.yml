@@ -1,0 +1,10 @@
+---
+AWSTemplateFormatVersion: '2010-09-09'
+Parameters:
+  LocalTransform: ./partial1.yml
+Resources:
+  ImportantBucket:
+    LocalTransform:
+    - ./partial2.yml
+    - bucketName: MyBucket
+      accessControl: PublicRead

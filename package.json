@@ -1,0 +1,30 @@
+{
+  "name": "cf-template-assembler",
+  "version": "1.0.0",
+  "description": "Utility for assembling CloudFormation templates from template partials",
+  "main": "index.js",
+  "repository": "https://github.com/adamfitzpatrick/cf-template-assembler.git",
+  "author": "Adam Fitzpatrick",
+  "license": "MIT",
+  "scripts": {
+    "test": "mochista --reporter=lcov --reporter=spec mocha lib/**/*.spec.js",
+    "tdd": "npm test -- --watch"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^5.1.1",
+    "mochista": "^0.13.0",
+    "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "yamljs": "^0.3.0"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "it",
+      "beforeEach"
+    ]
+  }
+}
